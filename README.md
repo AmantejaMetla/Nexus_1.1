@@ -243,7 +243,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact & Support
 
 - **Email**: support@nexus-ai.com
-- **GitHub**: [@your-username](https://github.com/your-username)
+- **GitHub**: [@your-username](https://github.com/amantejametla)
 - **Demo**: [Live Demo](https://nexus-ai-demo.vercel.app)
 - **Documentation**: [Full Documentation](https://docs.nexus-ai.com)
 
