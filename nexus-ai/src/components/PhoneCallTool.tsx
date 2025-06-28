@@ -159,7 +159,7 @@ export default function PhoneCallTool({ onClose }: PhoneCallToolProps) {
     setCallStatus('Initiating call...')
 
     try {
-      const response = await fetch('http://localhost:3001/api/start-call', {
+      const response = await fetch('/api/start-call', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -200,7 +200,7 @@ export default function PhoneCallTool({ onClose }: PhoneCallToolProps) {
       
       // More specific error messages
       if (err.name === 'TypeError' && err.message.includes('fetch')) {
-        setError('Cannot connect to server. Make sure the backend is running on port 3001.')
+        setError('Cannot connect to server. Please check your internet connection.')
       } else if (err.message.includes('JSON')) {
         setError('Server response error. Please try again.')
       } else {
