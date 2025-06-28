@@ -1,0 +1,254 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom Calendar Styles */
+.nexus-calendar {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.nexus-calendar .rbc-header {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 12px 8px;
+}
+
+.nexus-calendar .rbc-month-view {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-date-cell {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 8px;
+  min-height: 100px;
+}
+
+.nexus-calendar .rbc-date-cell:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.nexus-calendar .rbc-date-cell.rbc-off-range {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.nexus-calendar .rbc-today {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.nexus-calendar .rbc-selected {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+  border: 1px solid rgba(59, 130, 246, 0.5) !important;
+}
+
+.nexus-calendar .rbc-toolbar {
+  color: white !important;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.nexus-calendar .rbc-toolbar button {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nexus-calendar .rbc-toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+.nexus-calendar .rbc-toolbar button.rbc-active {
+  background-color: rgba(59, 130, 246, 0.3) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  color: white !important;
+}
+
+.nexus-calendar .rbc-toolbar-label {
+  color: white !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+}
+
+.nexus-calendar .rbc-event {
+  border-radius: 6px !important;
+  border: none !important;
+  padding: 2px 5px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.nexus-calendar .rbc-event:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+.nexus-calendar .rbc-slot-selection {
+  background-color: rgba(59, 130, 246, 0.2) !important;
+  border: 2px dashed rgba(59, 130, 246, 0.5) !important;
+}
+
+.nexus-calendar .rbc-show-more {
+  background-color: rgba(139, 92, 246, 0.2) !important;
+  color: white !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.nexus-calendar .rbc-show-more:hover {
+  background-color: rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Week and Day view styles */
+.nexus-calendar .rbc-time-view {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-time-header {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-time-content {
+  background-color: transparent !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-time-slot {
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.nexus-calendar .rbc-timeslot-group {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-day-slot {
+  background-color: transparent !important;
+}
+
+.nexus-calendar .rbc-day-slot:hover {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.nexus-calendar .rbc-current-time-indicator {
+  background-color: #ef4444 !important;
+  height: 2px !important;
+  z-index: 3;
+}
+
+/* Agenda view styles */
+.nexus-calendar .rbc-agenda-view {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nexus-calendar .rbc-agenda-view table {
+  background-color: transparent !important;
+}
+
+.nexus-calendar .rbc-agenda-view .rbc-agenda-date-cell,
+.nexus-calendar .rbc-agenda-view .rbc-agenda-time-cell,
+.nexus-calendar .rbc-agenda-view .rbc-agenda-event-cell {
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.nexus-calendar .rbc-agenda-view .rbc-agenda-date-cell {
+  font-weight: 600;
+  width: 120px;
+}
+
+.nexus-calendar .rbc-agenda-view .rbc-agenda-time-cell {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nexus-calendar .rbc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nexus-calendar .rbc-toolbar .rbc-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .nexus-calendar .rbc-toolbar button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .nexus-calendar .rbc-date-cell {
+    min-height: 80px;
+    padding: 4px;
+  }
+  
+  .nexus-calendar .rbc-event {
+    font-size: 10px !important;
+    padding: 1px 3px !important;
+  }
+}
